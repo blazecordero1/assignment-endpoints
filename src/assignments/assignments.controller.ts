@@ -36,4 +36,16 @@ export class AssignmentsController {
     }
     return { isPrime: true };
   }
+
+  @Get('factorial/:number')
+  getFactorial(@Param('number') number: string) {
+    const num = parseInt(number, 10);
+    if (isNaN(num) || num < 0) {
+      return { error: 'Invalid input, please provide a non-negative integer' };
+    }
+
+    const factorial = (n: number): number => (n <= 1 ? 1 : n * factorial(n - 1));
+
+    return { factorial: factorial(num) };
+  }
 }
