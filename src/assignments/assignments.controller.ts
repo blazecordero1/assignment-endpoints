@@ -21,4 +21,19 @@ export class AssignmentsController {
     return { sequence: fibonacci(num) };
   }
 
+
+  @Get('prime/:number')
+  isPrime(@Param('number') number: string) {
+    const num = parseInt(number, 10);
+    if (isNaN(num) || num < 2) {
+      return { isPrime: false };
+    }
+
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+      if (num % i === 0) {
+        return { isPrime: false };
+      }
+    }
+    return { isPrime: true };
+  }
 }
