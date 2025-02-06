@@ -30,7 +30,7 @@ Create an endpoint that returns the first `n` numbers in the Fibonacci sequence.
 
 #### Example Request:
 **Method:** GET  
-**Path URL:** `/assignments/fibonacci/:n` (e.g., `http://localhost:9090/assignments/fibonacci/5`)
+**Path URL:** `/assignments/fibonacci/:n` (e.g., `http://localhost:3000/assignments/fibonacci/5`)
 
 #### Example Response:
 ```json
@@ -51,7 +51,7 @@ Create an endpoint that checks if a given number is prime.
 
 #### Example Request:
 **Method:** GET  
-**Path URL:** `/assignments/prime/:number` (e.g., `http://localhost:9090/assignments/prime/7`)
+**Path URL:** `/assignments/prime/:number` (e.g., `http://localhost:3000/assignments/prime/7`)
 
 #### Example Response:
 ```json
@@ -72,7 +72,7 @@ Create an endpoint that calculates the factorial of a given number.
 
 #### Example Request:
 **Method:** GET  
-**Path URL:** `/assignments/factorial/:number` (e.g., `http://localhost:9090/assignments/factorial/5`)
+**Path URL:** `/assignments/factorial/:number` (e.g., `http://localhost:3000/assignments/factorial/5`)
 
 #### Example Response:
 ```json
@@ -80,6 +80,14 @@ Create an endpoint that calculates the factorial of a given number.
   "factorial": 120
 }
 ```
+
+---
+
+
+Overall Example Requests:
+    Fibonacci Sequence: GET http://localhost:3000/assignments/fibonacci/5
+    Prime Number Check: GET http://localhost:3000/assignments/prime/7
+    Factorial Calculation: GET http://localhost:3000/assignments/factorial/5
 
 # assignments
 # assignments
